@@ -211,7 +211,21 @@ The app will run on port 5000 by default:
 ```
 http://127.0.0.1:5000/
 ```
+Perfect! 🎉 Your Flask app is running on your  **EC2 public IP:5000** and is connected to your app.
 
+**Open in browser:**
+```
+http://<EC2_PUBLIC_IP>:5000/users
+```
+You should see JSON output like:
+```
+[
+  {"id": 1, "name": "Ritesh Singh", "email": "ritesh@example.com"},
+  {"id": 2, "name": "DevOps Learner", "email": "devops@example.com"}
+]
+```
+
+### THANKS
 
 
 
