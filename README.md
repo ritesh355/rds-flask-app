@@ -169,14 +169,50 @@ SELECT * FROM users;
 ```
 ![](images/11.png)
 
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/<your-username>/rds-flask-app.git
+cd rds-flask-app
+```
+![](images/clone1.png)
 
-✅ You should see output like:
-+----+--------------+----------------------+
-| id | name         | email                |
-+----+--------------+----------------------+
-|  1 | Ritesh Singh | ritesh@example.com   |
-|  2 | DevOps Learner | devops@example.com |
-+----+--------------+----------------------+
+### 2️⃣ Create & Activate Virtual Environment
+```bash
+python3 -m venv myenv
+source myenv/bin/activate   # On Windows: myenv\Scripts\activate
+```
+![](images/12.png)
+
+### 3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 4️⃣ Configure Database Connection
+
+Open app.py and update your RDS details:
+```python
+
+db = mysql.connector.connect(
+    host="database-1.ckf2cs480fnc.us-east-1.rds.amazonaws.com",  # Replace with your RDS endpoint
+    user="admin",
+    password="your_rds_password_here",
+    database="riteshdb"
+)
+```
+
+![](images/13.png)
+
+### 5️⃣ Run the Flask App
+```python
+python app.py
+```
+
+The app will run on port 5000 by default:
+```
+http://127.0.0.1:5000/
+```
+
+
 
 
 
