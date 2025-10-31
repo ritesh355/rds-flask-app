@@ -7,8 +7,8 @@ app = Flask(__name__)
 db = mysql.connector.connect(
     host="database-1.ckf2cs480fnc.us-east-1.rds.amazonaws.com",  # Replace with your RDS endpoint
     user="admin",
-    password="password123",
-    database="devopsdb"
+    password="password123", #replace with your database password
+    database="devopsdb"  #replace with your database name
 )
 
 @app.route('/')
