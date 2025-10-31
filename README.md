@@ -145,6 +145,8 @@ CREATE DATABASE riteshdb;
 ```sql
 USE riteshdb;
 ```
+![](images/10.png)
+
 ### Step 3: Create a sample table
 ```sql
 CREATE TABLE users (
@@ -153,6 +155,7 @@ CREATE TABLE users (
   email VARCHAR(100)
 );
 ```
+
 ### Step 4: Insert sample data
 ```sql
 INSERT INTO users (name, email) 
@@ -164,6 +167,9 @@ VALUES
 ```sql
 SELECT * FROM users;
 ```
+![](images/11.png)
+
+
 ✅ You should see output like:
 +----+--------------+----------------------+
 | id | name         | email                |
